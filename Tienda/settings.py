@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     # Aplicaciones que vayamos creando
     'Users',
+    'lolcito',
 ]
 SIMPLE_JWT={
     "ACCESS_TOKEN_LIFETIME":timedelta(minutes=60),
