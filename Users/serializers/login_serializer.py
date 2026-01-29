@@ -37,7 +37,7 @@ class LoginSerializer(serializers.ModelSerializer):
         return telefono
     def validate_password(self, password):
         if not any(n.isdigit() for n in password):
-            raise serializers.ValidationError("El password tiene que contener al menos un digito.")
+            raise serializers.ValidationError("El password tiene que contener al menos un numero.")
         return password
 
     def validate(self, attrs):
